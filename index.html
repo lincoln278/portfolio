@@ -3,162 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage with Header, Body, and Footer</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color:rgba(19, 18, 18, 0);
-        }
-        
-        
-        body {
-            background-image: url('images (2).jpeg'); 
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: rgb(252, 7, 7);
-            background-color:rgba(19, 18, 18, 0);
-        }
-        
-        
-        header {
-            background-image: url('images (1).jpeg'); 
-            background-size: cover;
-            background-position: center;
-            color: rgb(10, 23, 212);
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 3em;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        
-        nav ul li a {
-            color: rgb(238, 166, 12);
-            text-decoration: none;
-            font-size: 1.2em;
-            
-        }
-
-        nav a:hover {
-            color: green;
-             transform: scale(1.1); /* Slight zoom effect on hover */
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        
-        main section {
-            margin-bottom: 40px;
-        }
-        
-        main h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        main p {
-            font-size: 1.2em;
-        }
-        
-        
-        footer {
-            background-size: cover;
-            background-position: center;
-            color: rgb(15, 245, 7);
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        footer .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        
-        footer p {
-            margin: 0;
-            font-size: 1em;
-        }
-        
-        footer nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        footer nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        
-        footer nav ul li a {
-            color: rgba(221, 16, 187, 0.904);
-            text-decoration: none;
-            font-size: 1em;
-        }
-        
-        footer nav ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Lincoln Straton - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <div class="header-content">
-            <h1>Welcome to My Website</h1>
+        <div class="container">
+            <div class="logo">Lincoln Straton</div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>This is the home section of the website.</p>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm [Lincoln Straton]</h1>
+                    <p class="lead">[Your Profession/Soft weare]</p>
+                    <a href="#projects" class="button">View My Work</a>
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Section</h2>
-            <p>Learn more about us in this section.</p>
+        <section id="about" class="about section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>HI iám living in arusha and i am a student in f2 my passion is to be a programmer, things that makes me whant to know programming is codes. from know i know many programming languages example HTML, CSS, JavaScript, Java, c++, c and i am reading query.</p>
+                    <p>I can make a web site a form a list a tabel and know i am going to learn quer. i have made a web site of a my primary school called St.arnold janssen</p>
+                </div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Services Section</h2>
-            <p>We offer amazing services.</p>
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <article class="project-item">
+                        <h3>Project Title 1</h3>
+                        <div class="link">
+                        <p>Click portfolio to see the project</p><a href="https://lincoln278.github.io/portfolio/">portfolio</a>
+                    </div>
+                        <p>This description of the project and my role.</p>
+                        <div class="project-links">
+                            <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzEyMF0" target="_blank" rel="noopener noreferrer">Email</a>
+                            <a href="https://github.com/lincoln278" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+                    </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Get in touch with us here.</p>
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>C</li>
+                    </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Isaya Nteicas. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzEyMF0" target="_blank" rel="noopener noreferrer">Email</a>
+                <a href="https://github.com/lincoln278" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
