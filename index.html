@@ -5,6 +5,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lincoln Straton - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0097a7;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  text-align: center;
+}
+
+.about .about-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+  background: #f0f0f0;
+}
+
+.project-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .social-links a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -41,7 +296,7 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <p>HI iám living in arusha and i am a student in f2 my passion is to be a programmer, things that makes me whant to know programming is codes. from know i know many programming languages example HTML, CSS, JavaScript, Java, c++, c and i am reading query.</p>
+                    <p>HI iam living in arusha and i am a student in f2 my passion is to be a programmer, things that makes me whant to know programming is codes. from know i know many programming languages example HTML, CSS, JavaScript, Java, c++, c and i am reading query.</p>
                     <p>I can make a web site a form a list a tabel and know i am going to learn quer. i have made a web site of a my primary school called arusha primary school</p>
                 </div>
             </div>
@@ -57,8 +312,18 @@
                         <p>Click portfolio to see the project</p><a href="https://lincoln278.github.io/portfolio/">portfolio</a>
                     </div>
                         <p>This description of the project and my role.</p>
+                        <!-- Inside #about section -->
+<img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Lincoln Straton Profile">
+
                         <div class="project-link>
-                            <a href="https://github.com/lincoln278" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://github.com/lincoln278" target="_blank" rel="noopener noreferrer">GitHub</a><article class="project-item">
+  <img src="https://via.placeholder.com/400x200.png?text=Arusha+School+Website" alt="Project Thumbnail">
+  <h3>Arusha Primary School Website</h3>
+  <p>This is a website I built for my former school using HTML, CSS, and JavaScript.</p>
+  <a href="https://lincoln278.github.io/portfolio/" target="_blank">View Project</a>
+</article>
+
+                            
                         </div>
                     </article>
                     </div>
